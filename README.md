@@ -25,6 +25,13 @@ Serially inputs data.
 **SA** - Slave address if 0, then slave 0 is selected, else slave 1 is selected.  
 **R2-R0** - Address of the register on which the read/write operation is to be done.  
 **D7-D0** - Data to be written in the register if write operation (not considered in case of read operation).  
+## Working
+- CS is made active low to initiate the process.
+- The next positive edge of the clock cycle enables the capturing of data from the MOSI input in the above shown format in both slaves.
+- The SA bit of the input data stream is compared with the assigned address of the slave; if matched, then the other input bits are captured, else the slave doesn’t perform any further action.
+- Once the slave address is matched, the next 3 bits are used to determine the register address, and based on the WR bit’s value, read operation is done, and the remaining bits are not considered at the input, and for write operation, the other incoming bits are written in the selected register.
+- After an operation, CS can be made active low to disable the next operation; otherwise, the slaves start capturing data again in the pattern shown above.
+
 
 
 
