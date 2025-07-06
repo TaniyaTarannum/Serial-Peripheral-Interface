@@ -20,11 +20,11 @@ If active high, then the output is disabled.
 Serially inputs data.  
 ![image](https://github.com/user-attachments/assets/9d0abdd0-d1f9-4551-9096-3f2fc8f73a83)
 ### Input bit pattern
-![image](https://github.com/user-attachments/assets/617d62ee-6bfc-4ea2-ad63-96cf33a0c510)
-**WR** - Read operation if value is ‘0’ and write operation if value is ‘1’.
-**SA** - Slave address if 0, then slave 0 is selected, else slave 1 is selected.
-**R2-R0** - Address of the register on which the read/write operation is to be done.
-**D7-D0** - Data to be written in the register if write operation (not considered in case of read operation).
+![image](https://github.com/user-attachments/assets/617d62ee-6bfc-4ea2-ad63-96cf33a0c510)  
+**WR** - Read operation if value is ‘0’ and write operation if value is ‘1’.  
+**SA** - Slave address if 0, then slave 0 is selected, else slave 1 is selected.  
+**R2-R0** - Address of the register on which the read/write operation is to be done.  
+**D7-D0** - Data to be written in the register if write operation (not considered in case of read operation).  
 
 
 
