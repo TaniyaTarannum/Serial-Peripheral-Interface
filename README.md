@@ -30,10 +30,10 @@ Serially inputs data.
 - The next positive edge of the clock cycle enables the capturing of data from the MOSI input in the above-shown format in both slaves.
 - The SA bit of the input data stream is compared with the assigned address of the slave; if matched, then the other input bits are captured, else the slave doesn’t perform any further action.
 - Once the slave address is matched, the next 3 bits are used to determine the register address, and based on the WR bit’s value, the read operation is done, and the remaining bits are not considered at the input, and for the write operation, the other incoming bits are written in the selected register.
-- After an operation, CS can be made active low to disable the next operation; otherwise, the slaves start capturing data again in the pattern shown above.
-**Note**
+- After an operation, CS can be made active low to disable the next operation; otherwise, the slaves start capturing data again in the pattern shown above.  
+**Note**  
 i) The chip select is used to disable the input and keep the output constant, and to avoid any noise coming at the input from being captured as actual input.  
-ii) The reset signal is to disable the output whenever it is not needed.
+ii) The reset signal is to disable the output whenever it is not needed.  
 
 
 
