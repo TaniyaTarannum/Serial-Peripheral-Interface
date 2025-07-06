@@ -33,9 +33,10 @@ Serially inputs data.
 - After an operation, CS can be made active low to disable the next operation; otherwise, the slaves start capturing data again in the pattern shown above.  
 **Note**  
 i) The chip select is used to disable the input and keep the output constant, and to avoid any noise coming at the input from being captured as actual input.  
-ii) The reset signal is to disable the output whenever it is not needed.  
-
-
+ii) The reset signal is to disable the output whenever it is not needed.
+## Synthesis and Equivalence Check  
+The RTL design of the SPI interface was synthesized using the Cadence Genus tool with a 65nm CMOS standard cell library and specified design constraints. The synthesis process generated area, timing, power, and quality reports, which were used to evaluate design reliability and verify compliance with the defined constraints.  
+The synthesized netlist was subsequently verified for logical equivalence against the RTL design using the Cadence Conformal tool.
 
 
 
