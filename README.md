@@ -18,5 +18,6 @@ If active high, then input is disabled.
 If active high, then the output is disabled.
 #### mosi 
 Serially inputs data.
+
 The interface is as shown:
 ![image](https://github.com/user-attachments/assets/9d0abdd0-d1f9-4551-9096-3f2fc8f73a83)
